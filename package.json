@@ -1,6 +1,16 @@
 {
   "name": "lodash-vision",
   "version": "0.0.0",
+  "description": "Lodash template engine for use with visionary (hapi).",
+  "repository": "millette/lodash-vision",
+  "author": {
+    "name": "Robin Millette",
+    "email": "robin@millette.info",
+    "url": "http://robin.millette.info"
+  },
+  "engines": {
+    "node": ">=4"
+  },
   "main": "lodash-vision.js",
   "scripts": {
     "lint": "standard",
