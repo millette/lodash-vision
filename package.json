@@ -1,6 +1,6 @@
 {
   "name": "lodash-vision",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Lodash template engine for use with visionary (hapi).",
   "repository": "millette/lodash-vision",
   "author": {
