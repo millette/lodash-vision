@@ -12,9 +12,6 @@ with hapi.
 from a manifest which is a plain JSON file and cannot contain calls
 to server.views() or require the rendering engine.
 
-If you are not loading your views manager from a static JSON manifest file,
-you probably don't need this plugin. See [vision][].
-
 ## Usage example
 
 ```
@@ -24,15 +21,14 @@ server.register(require(['vision']))
       engines: { html: require('lodash-vision') },
       path: 'templates',
       partialsPath: 'templates/partials',
+      helpersPath: 'templates/helpers',
       isCached: true
     })
     return server.start(() => {
       console.log('\nStarted the web server on port ' + server.info.port)
     })
   })
-  .catch((err) => {
-    console.error('Error:', err)
-  })
+  .catch(console.error)
 })
 
 ```
